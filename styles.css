@@ -1,44 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 :root {
     --whileColor: #fff;
     --PrimaryColor: #FF5B00;
+    --BlackColor:#1b1b25;
+}
+
+*{
+    color: var(--BlackColor);
+    font-family: 'Raleway', sans-serif;
 }
 
 html {
     width: 100%;
     height: 100%;
-    color: var(--whileColor);
 }
 
 body {
-    background-color: transparent;
+    background: transparent;
     width: 100%;
     height: 100%;
     display: flex;
     justify-items: center;
     align-items: center;
 }
-.row{
-    padding: 0.5em;
-    margin: 1em;
-    align-items: center;
-    margin-top: 0;
-}
 .main-container {
-    background: #00000005;
+    background: #1b1b2505;
+    border-radius: 25px;
     box-sizing: border-box;
-    box-shadow: 0 0 5em #00000020;
-    /* background-image: radial-gradient(#ff4800, #ebd300, #6bc901); */
-    background-size: 400% 400%;
-    position: center;
-    /* animation: gradient 5s ease-in-out infinite; */
-    height: 90%;
+    background-size: cover;
+    /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    /* border: solid 1px #FF5B00; */
-    border-radius: 25px;
 
+}
+
+.navigationbar{
+    margin: 0.5em;
+    padding: 0.5em;
 }
 
 .brand {
@@ -46,31 +50,40 @@ body {
     font-size: 1.5em;
     cursor: pointer;
     color: var(--PrimaryColor);
+    text-align: center;
+    align-self: center;
 }
 .menus{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     text-align: center;
-    padding: 1em;
-    transition: all ease-in-out .5s;
+}
+.tagline
+{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1em;
+}
+.greetings{
+    font-family: 'Rozha One', serif;
+    font-size: 2.5em;
 }
 a{
-    padding:1em;
+    padding: 1em;
+    transition: all ease 0.1s;
 }
 a:hover{
-
+    padding: 1em;
     border-bottom: solid 1px #FF5B00;
 }
 .menus > a{
     padding: 0.5em;
-    margin: 1em;
-    margin-top: 0;
+    margin: 0.5em;
     text-decoration: none;
 }
 
 .menus > a{
-    color: black;
+    color: var(--BlackColor);
 }
 
 .menus > a:hover, .menus > .active{
@@ -79,6 +92,7 @@ a:hover{
 .typed {
     color: var(--PrimaryColor);
   }
+
 
 .hero-image{
     height: 100%;
@@ -98,4 +112,9 @@ a:hover{
     100% {
         background-position: 0% 50%;
     }
+}
+
+.test-border
+{
+    border: solid 1px red;
 }
