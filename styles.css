@@ -46,7 +46,7 @@ body {
 }
 
 .brand {
-    font-family: 'Berkshire Swash', cursive;
+    font-family: 'Auriol LT Std Black', 'Berkshire Swash', cursive;
     font-size: 1.5em;
     cursor: pointer;
     color: var(--PrimaryColor);
