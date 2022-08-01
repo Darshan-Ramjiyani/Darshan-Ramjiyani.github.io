@@ -86,6 +86,9 @@ a:hover{
 
 .menus > a:hover, .menus > .active{
     color: var(--PrimaryColor);
+    background: transparent;
+    box-sizing: border-box;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 .typed {
     color: var(--PrimaryColor);
